@@ -8,10 +8,10 @@ MonoDevelopのアドインのサンプルです。
 
 インストール
 ~/.config/MonoDevelop/addins/にMonoDevelop.HelloAddinというディレクトリを作成し、dllを追加してください。
->>
+
 $ mkdir ~/.config/MonoDevelop/addins/MonoDevelop.HelloAddin
 $ cp HelloAddin/HelloAddin/bin/Debug/HelloAddin.dll ~/.config/MonoDevelop/addins/MonoDevelop.HelloAddin
-<<
+
 
 MonoDevelopを再起動し、ツールメニューの「Hello Addin」を実行すると、ステータスバーに「Hello, MonoDevelop Addin!!」と表示されます。
 
