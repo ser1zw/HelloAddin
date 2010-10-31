@@ -1,0 +1,39 @@
+<!-- HelloAddin.addin.xml -->
+<!-- 最初にメタ情報を記述 -->
+<Addin	id		= "HelloAddin"
+	namespace	= "MonoDevelop"
+	name		= "Hello Addin"
+	author		= "ser1zw"
+	copyright	= "MIT"
+	description	= "A sample addin"
+	category	= "sample"
+	version		= "1.0">
+
+	<!--
+	  依存パッケージを記述
+	  "プロジェクト→参照アセンブリの編集"で追加したものをここに加える
+	  記述するのはMonoDevelop以下の名前空間
+	  例えば MonoDevelop.Ide なら <Addin id="Ide" version="2.4" /> みたいな感じ
+	-->
+	<Dependencies>
+	       	<Addin id="Ide" version="2.4" />
+	</Dependencies>
+	
+	<!-- コマンドを定義 -->
+	<Extension path="/MonoDevelop/Ide/Commands">
+		<!--
+		  idはCommands.csで定義したコマンド(enum)の完全パス
+	  	  _labelはメニューに表示される文字列
+		  defaultHandlerは実行されるコマンドハンドラのクラス名
+	  	-->
+		<Command id="MonoDevelop.HelloAddin.Commands.HelloCommand"
+			_label="Hello Addin"
+			defaultHandler="MonoDevelop.HelloAddin.HelloAddinHandler" />
+	</Extension>
+
+	<!-- コマンドをツールメニューに追加 -->
+	<Extension path="/MonoDevelop/Ide/MainMenu/Tools">
+		<!-- idは上で定義したのと同じ -->
+		<CommandItem id="MonoDevelop.HelloAddin.Commands.HelloCommand" />
+	</Extension>
+</Addin> 

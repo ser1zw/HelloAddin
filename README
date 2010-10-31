@@ -1,0 +1,30 @@
+MonoDevelopのアドインのサンプルです。
+ステータスバーに「Hello, MonoDevelop Addin!!」と表示します。
+
+環境
+-MonoDevelop 2.4
+-Mono 2.6.7
+-Ubuntu 10.10
+
+インストール
+~/.config/MonoDevelop/addins/にMonoDevelop.HelloAddinというディレクトリを作成し、dllを追加してください。
+>>
+$ mkdir ~/.config/MonoDevelop/addins/MonoDevelop.HelloAddin
+$ cp HelloAddin/HelloAddin/bin/Debug/HelloAddin.dll ~/.config/MonoDevelop/addins/MonoDevelop.HelloAddin
+<<
+
+MonoDevelopを再起動し、ツールメニューの「Hello Addin」を実行すると、ステータスバーに「Hello, MonoDevelop Addin!!」と表示されます。
+
+詳しくは下記へ
+http://d.hatena.ne.jp/ser1zw/20101031/1288498640
+
+
+参考
+Addin development basics - MonoDevelop
+http://monodevelop.com/Developers/Articles/Addin_development_basics
+
+API Overview - MonoDevelop
+http://monodevelop.com/Developers/Articles/API_Overview
+
+
+

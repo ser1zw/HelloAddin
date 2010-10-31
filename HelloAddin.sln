@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloAddin", "HelloAddin\HelloAddin.csproj", "{73B35669-B71D-436A-AC42-5B0573B56213}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73B35669-B71D-436A-AC42-5B0573B56213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B35669-B71D-436A-AC42-5B0573B56213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B35669-B71D-436A-AC42-5B0573B56213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B35669-B71D-436A-AC42-5B0573B56213}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = HelloAddin\HelloAddin.csproj
+	EndGlobalSection
+EndGlobal
